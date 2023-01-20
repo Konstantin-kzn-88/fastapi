@@ -25,3 +25,5 @@ async def home(request: Request):
 async def show_page(request: Request, page_name: str):
     data = openfile(page_name + ".md")
     return templates.TemplateResponse("page.html", {"request": request, "data": data})
+
+
